@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+
+/venv/
+/screenshots/
+*.png
+*.jpg
+
+*.log
