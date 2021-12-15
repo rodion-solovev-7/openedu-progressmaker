@@ -7,6 +7,12 @@
 
 ## Подготовка
 
+Клонируем репозиторий и входим в него.
+```bash
+git clone https://github.com/rodion-solovev-7/openedu-progressmaker.git
+cd openedu-progressmaker/
+```
+
 Создаём виртуальное окружение и активируем его
 ```bash
 python3 -m venv venv
@@ -22,7 +28,6 @@ python -m pip install -r requirements.txt
 
 В виртуальном окружении:
 ```bash
-cd PROJECT_ROOT/
 USERNAME="OPENEDU_USERNAME" PASSWORD="OPENEDU_PASSWORD" EMAIL="OPENEDU_EMAIL" python create_screenshots.py
 ```
 
@@ -34,7 +39,7 @@ USERNAME="OPENEDU_USERNAME" PASSWORD="OPENEDU_PASSWORD" EMAIL="OPENEDU_EMAIL" py
 
 На данный момент решение работает только с одним курсом. 
 
-Для адаптации под другие курсы необходимо изменить `.js`-скрипт под нужды этого графика этого курса:
-у многих курсов есть разные "типы" заданий, которые выполняются в разной последовательности.
+Для адаптации под другие курсы необходимо изменить `.js`-скрипт под нужды графика этого курса:
+у многих курсов есть разные "классы" заданий, которые выполняются в разной последовательности.
 
 Также необходимо изменить ссылку в `.py` скрипте на свою.
